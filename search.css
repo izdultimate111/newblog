@@ -1,0 +1,216 @@
+.navi-flex {
+  font-size: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  width: 97%;
+  height: 50px;
+  justify-content: center;
+  /* background-color: #879199; */
+  background-color: #c9cfd4;
+  background-color: white;
+  border-bottom: 1px solid #c1cbd4;
+}
+.navi-list {
+  padding: 0px 20px;
+  border-right: none;
+  font-family: "Akshar", sans-serif;
+  font-weight: 100;
+  font-size: 0.9rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+li {
+  display: inline;
+  margin: 0;
+  /* padding: 0 20px; */
+  /* text-align: right; */
+  float: left;
+  border-right: 1px solid #bbb;
+  color: rgb(61, 61, 61);
+}
+li:last-child {
+  border-right: none;
+}
+a {
+  display: block;
+  padding: 2px 8px;
+  color: black;
+  text-decoration: 0;
+  transition: 0.1s;
+}
+a:hover {
+  text-decoration: underline;
+  transition: 0.2s;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "hd hd hd hd hd hd"
+    "mntop mntop mntop mntop mntop mntop"
+    "mnbtm mnbtm mnbtm mnbtm mnbtm mnbtm"
+    "ft ft ft ft ft ft";
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 80px 400px 400px;
+}
+.navigation-divi {
+  grid-area: hd;
+}
+.form-divi {
+  grid-area: mntop;
+  background-color: #e6ccb2;
+  margin-top: 40px;
+  border-radius: 20px 20px 0px 0px;
+  text-align: center;
+}
+.news-divi {
+  grid-area: mnbtm;
+  background-color: rgb(240, 238, 238);
+  border-radius: 0px 0px 20px 20px;
+}
+.foot-divi {
+  grid-area: ft;
+}
+
+.search {
+  border-radius: 10px;
+  height: 72px;
+  width: 100px;
+  border: 0;
+  font-size: 20px;
+  box-shadow: 0 0.5em 0.5em -0.4em;
+}
+#search-in {
+  border-radius: 10px;
+  height: 70px;
+  margin-top: 7em;
+  text-align: center;
+  width: 750px;
+  border: 0;
+  font-size: 20px;
+  box-shadow: 0 0.5em 0.5em -0.4em;
+}
+
+.search:hover {
+  cursor: pointer;
+  background-color: #49525a;
+  color: blanchedalmond;
+  transition: 0.2s;
+  box-shadow: 0 0.5em 0.5em -0.4em;
+  border-color: rgb(117, 52, 52);
+}
+
+.news-letter {
+  margin-top: 60px;
+  height: 220px;
+  padding: 10px 85px;
+  max-width: 950px;
+  width: 750px;
+  height: 300px;
+  text-align: left;
+  line-height: 32px;
+}
+
+h1 {
+  font-size: 2.2em;
+  font-family: "Raleway", sans-serif;
+  line-height: 40px;
+}
+.message-two {
+  margin-top: 20px;
+}
+.subscribe {
+  border-radius: 30px;
+  height: 52px;
+  width: 100px;
+  border: 1px solid #a2acb4;
+}
+#subscribe-in {
+  border-radius: 30px;
+  height: 46px;
+  margin-top: 1em;
+  text-align: center;
+  border: 1px solid #a2acb4;
+  width: 350px;
+  background-color: rgb(248, 247, 247);
+  color: #49525a;
+}
+.subscribe:hover {
+  cursor: pointer;
+  background-color: #49525a;
+  color: blanchedalmond;
+  transition: 0.2s;
+}
+
+#foot {
+  padding: 3em;
+  border-radius: 0px 0px 10px 10px;
+  text-align: center;
+  flex: 1em;
+  margin: 0em 20px;
+  background-color: #eedac7;
+  padding-top: 15px;
+}
+
+.foot-link {
+  flex: 1;
+  max-width: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: left;
+  background-color: #e6ccb2;
+  letter-spacing: 2px;
+  border-radius: 10px;
+  font-family: "Roboto", sans-serif;
+  color: #49525a;
+}
+
+@media (min-width: 100px) and (max-width: 545px) {
+  li {
+    border-right: 0;
+  }
+  .foot-link {
+    max-width: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #eedac7;
+  }
+  .navi-flex {
+    font-size: 1.7em;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    width: 0;
+    line-height: 20px;
+    border: 0;
+    height: 80px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-areas:
+      "hd hd hd hd hd hd"
+      "mntop mntop mntop mntop mntop mntop"
+      "mnbtm mnbtm mnbtm mnbtm mnbtm mnbtm"
+      "ft ft ft ft ft ft";
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 80px 400px 400px;
+  }
+  /* .container {
+    grid-template-rows: 130px 400px 400px;
+  } */
+  #search-in {
+    width: 450px;
+  }
+  #search-in {
+    width: 350px;
+  }
+  .news-letter {
+    width: 450px;
+  }
+
+  .subscribe {
+    margin-top: 15px;
+  }
+}
