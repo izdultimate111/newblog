@@ -64,7 +64,7 @@ a:hover {
     "hd hd hd hd hd hd"
     "bd bd bd bd bd bd"
     "ft ft ft ft ft ft";
-  grid-template-columns: 33.3% 33.3% 33.3% 33.3% 33.3% 33.3%;
+  grid-template-columns: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
   grid-template-rows: 80px 1000px;
 }
 .header-gri {
